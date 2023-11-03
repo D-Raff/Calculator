@@ -5,3 +5,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+table { 
+    border: 3px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 20px;
+    background: darkgrey;
+} 
+  
+input[type="button"] { 
+    width: 100%; 
+    padding: 20px 20px; 
+    background-color: grey; 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black; 
+} 
+  
+input[type="text"] { 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    border: 2px solid black; 
+} 
