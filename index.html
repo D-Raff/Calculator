@@ -8,41 +8,46 @@
   </head>
 
   <body>
-    <table id="calculator">
-      <tr>
+      <!-- <tr>
         <td colspan="4">
           <input type="text" id="result" />
         </td>
-      </tr>
+      </tr> -->
 
-      <tr>
-        <td><input type="button" value="c" /></td>
-      </tr>
-
-      <tr>
-        <td><input type="button" value="1" /></td>
-        <td><input type="button" value="2" /></td>
-        <td><input type="button" value="3" /></td>
-        <td><input type="button" value="/" /></td>
-      </tr>
-      <tr>
-        <td><input type="button" value="4" /></td>
-        <td><input type="button" value="5" /></td>
-        <td><input type="button" value="6" /></td>
-        <td><input type="button" value="*" /></td>
-      </tr>
-      <tr>
-        <td><input type="button" value="7" /></td>
-        <td><input type="button" value="8" /></td>
-        <td><input type="button" value="9" /></td>
-        <td><input type="button" value="-" /></td>
-      </tr>
-      <tr>
-        <td><input type="button" value="0" /></td>
-        <td><input type="button" value="." /></td>
-        <td><input type="button" value="=" /></td>
-        <td><input type="button" value="+" /></td>
-      </tr>
-    </table>
+    <div class="calculator">
+      <div class="screen"></div>
+      <div class="buttons">
+        <table>
+          <tr>
+            <td><button type="button" data-action="clear">c</button></td>
+          </tr>
+    
+          <tr>
+            <td><button type="button">1</button></td>
+            <td><button type="button">2</button></td>
+            <td><button type="button">3</button></td>
+            <td><button type="button" data-action="divide" >/</button></td>
+          </tr>
+          <tr>
+            <td><button type="button">4</button></td>
+            <td><button type="button">5</button></td>
+            <td><button type="button">6</button></td>
+            <td><button type="button" data-action="multiplication" >*</button></td>
+          </tr>
+          <tr>
+            <td><button type="button">7</button></td>
+            <td><button type="button">8</button></td>
+            <td><button type="button">9</button></td>
+            <td><button type="button" data-action="subtract" >-</button></td>
+          </tr>
+          <tr>
+            <td><button type="button">0</button></td>
+            <td><button type="button" data-action="period" >.</button></td>
+            <td><button type="button" data-action="calculate" >=</button></td>
+            <td><button type="button" data-action="add" >+</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
