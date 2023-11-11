@@ -57,7 +57,8 @@ button {
     font-weight: bold; 
     border: none; 
     border-radius: 5px;
-    box-shadow: 5px 5px 5px black; 
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
 } 
 button:hover{
     background: lightgrey;
