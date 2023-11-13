@@ -3,67 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
-    <!-- <tr>
-        <td colspan="4">
-          <input type="text" id="result" />
-        </td>
-      </tr> -->
+    <div class="calcBackground">
+      <div class="calculator">
+        <input type="text" id="display" disabled />
+        <div id="buttons" class="buttons">
+          <button data-value="C" class="button">C</button>
+          <button data-value="7" class="button">7</button>
+          <button data-value="8" class="button">8</button>
+          <button data-value="9" class="button">9</button>
+          <button data-value="/" class="button" id="operand">/</button>
 
-    <div class="calculator">
-      <div data-display="" class="display">
-        <div data-current></div>
-        <div data-res></div>
-      </div>
-      <div class="buttons">
-        <table>
-          <tr>
-            <td><button type="button" data-clear="clear">c</button></td>
-            <td><button type="button" data-delete="Delete">Del</button></td>
-          </tr>
+          <button data-value="5" class="button">5</button>
+          <button data-value="6" class="button">6</button>
+          <button data-value="4" class="button">4</button>
+          <button data-value="+" class="button" id="operand">+</button>
 
-          <tr>
-            <td><button type="button" value="1" data-number>1</button></td>
-            <td><button type="button" value="2" data-number>2</button></td>
-            <td><button type="button" value="3" data-number>3</button></td>
-            <td>
-              <button type="button" value="/" data-action="divide">/</button>
-            </td>
-          </tr>
-          <tr>
-            <td><button type="button" value="4" data-number>4</button></td>
-            <td><button type="button" value="5" data-number>5</button></td>
-            <td><button type="button" value="6" data-number>6</button></td>
-            <td>
-              <button type="button" value="*" data-action="multiplication">
-                *
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td><button type="button" value="7" data-number>7</button></td>
-            <td><button type="button" value="8" data-number>8</button></td>
-            <td><button type="button" value="9" data-number>9</button></td>
-            <td>
-              <button type="button" value="-" data-action="subtract">-</button>
-            </td>
-          </tr>
-          <tr>
-            <td><button type="button" value="0" data-number>0</button></td>
-            <td>
-              <button type="button" value="." data-number="period">.</button>
-            </td>
-            <td><button type="button" data-equals="calculate">=</button></td>
-            <td>
-              <button type="button" value="+" data-action="add">+</button>
-            </td>
-          </tr>
-        </table>
+          <button data-value="1" class="button">1</button>
+          <button data-value="2" class="button">2</button>
+          <button data-value="3" class="button">3</button>
+
+          <button data-value="*" class="button" id="operand">*</button>
+          <button data-value="0" class="button">0</button>
+
+          <button data-value="." class="button" id="operand">.</button>
+          <button data-value="=" class="button">=</button>
+          <button data-value="-" class="button" id="operand">-</button>
+        </div>
       </div>
     </div>
+    <script src="./script/code.js"></script>
   </body>
 </html>
