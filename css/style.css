@@ -35,6 +35,17 @@ body{
     font-weight: bold;
     background: white;
 }
+.display{
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 6em;
+    width: 90%;
+    position: relative;
+    top: 2em;
+    padding: 10px 20px; 
+    font-weight: bold;
+    background: white;
+}
 .buttons{
     /* border: 3px solid grey; */
     position: absolute;
